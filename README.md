@@ -14,3 +14,15 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+// JavaScript code can be added here to make the website interactive
+// For example, you can add event listeners or manipulate the DOM
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from submitting
+    // Get form values
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
+    // Display a message
+    alert('Thank you, ' + name + '! Your message has been sent.');
+    // You can add further processing here, like sending the form data to a server
+});
